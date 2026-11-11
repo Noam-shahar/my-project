@@ -28,7 +28,7 @@ metrics like the residual error (RMSE) and the coefficient of determination
 ($R^2$). Additionally, when using synthetic data, the agent's accuracy will
 be scored directly against a known control dataset (ground truth). A strict
 requirement is that the agent must respect the physical meaning of the
-parameters—for instance, it cannot suggest a negative width or
+parameters. For instance, it cannot suggest a negative width or
 amplitude for a peak, and the Pseudo-Voigt mixing parameter must
 strictly remain between 0 and 1.
 
