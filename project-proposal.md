@@ -13,7 +13,7 @@ field understand the problem.)
 
 Analyzing Raman spectroscopy data requires precise curve fitting to
 identify molecular vibrational modes, such as those in Carbon
-Tetrachloride (CCl_4). Usually, this is a tedious manual process:
+Tetrachloride ($CCl_4$). Usually, this is a tedious manual process:
 a researcher must visually inspect the data, guess initial parameters
 (peak center, width, and amplitude), and select the right mathematical
 line shape (Lorentzian, Gaussian, or Pseudo-Voigt). If the initial
@@ -25,7 +25,7 @@ data-correction loop that intelligently fits Raman peaks without human
 intervention. Since the full spectrum is constructed peak by peak,
 improvement will be measured by evaluating the goodness-of-fit using
 metrics like the residual error (RMSE) and the coefficient of determination
-(R^2). Additionally, when using synthetic data, the agent's accuracy will
+($R^2$). Additionally, when using synthetic data, the agent's accuracy will
 be scored directly against a known control dataset (ground truth). A strict
 requirement is that the agent must respect the physical meaning of the
 parameters—for instance, it cannot suggest a negative width or
@@ -95,8 +95,8 @@ next iteration. It can change two main things:
 1. The structural model: Deciding whether to use a Gaussian,
    Lorentzian, or Voigt/Pseudo-Voigt function based on which one best
    captures the physical shape of the specific peak.
-2. The initial numerical guesses: Center (x_0), Amplitude (A > 0),
-   Width (sigma or gamma > 0), and the mixing fraction.
+2. The initial numerical guesses: Center ($x_0$), Amplitude ($A > 0$),
+   Width ($\sigma$ or $\gamma > 0$), and the mixing fraction.
 
 Could a simple script achieve this? A basic script could blindly try
 all three functions and pick the lowest error. However, if the initial
